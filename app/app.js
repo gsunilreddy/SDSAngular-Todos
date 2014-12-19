@@ -11,7 +11,7 @@
     angular.module('sdsTodos').config(function($routeProvider) {
 
         /* Add New Routes Above */
-        $routeProvider.otherwise({redirectTo:'/'});
+        $routeProvider.otherwise({redirectTo:'/todos'});
 
     });
 
