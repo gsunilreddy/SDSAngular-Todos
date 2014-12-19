@@ -6,7 +6,11 @@
         'ngRoute',
         'ngAnimate',
         'LocalStorageModule'
-    ]);
+    ])
+
+        .config(['localStorageServiceProvider', function(localStorageServiceProvider){
+            localStorageServiceProvider.setPrefix('ls');
+    }]);
 
     angular.module('sdsTodos').config(function($routeProvider) {
 
